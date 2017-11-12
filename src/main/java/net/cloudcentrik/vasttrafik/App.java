@@ -19,6 +19,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 import static net.cloudcentrik.vasttrafik.DisplayBoardFrame.createAndShowGUI;
@@ -44,8 +45,14 @@ public class App
 
         Map<String, String> field=new HashMap<>();
         field.put("id","vårväderstorget");
-        field.put("date","17-11-12");
-        field.put("time","13:40");
+
+
+        String today = new SimpleDateFormat("yy-MM-dd").format(new Date().getTime()+60*60000);
+        String now = new SimpleDateFormat("HH-mm").format(new Date());
+
+
+        field.put("date",today);
+        field.put("time",now);
         field.put("format","json");
 
         Call<DepartureBoard> call1 = vasttrafikService.getDepartureBoard("Bearer "+token,field);
