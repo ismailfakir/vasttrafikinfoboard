@@ -1,4 +1,5 @@
 net/cloudcentrik/vasttrafik/App.class
+net/cloudcentrik/vasttrafik/VasttrafikUtils.class
 net/cloudcentrik/vasttrafik/VasttrifikTokenService.class
 net/cloudcentrik/vasttrafik/DisplayBoardFrame$1.class
 net/cloudcentrik/vasttrafik/App$1.class
@@ -10,4 +11,5 @@ net/cloudcentrik/vasttrafik/JourneyDetailRef.class
 net/cloudcentrik/vasttrafik/Departure.class
 net/cloudcentrik/vasttrafik/DepartureBoard.class
 net/cloudcentrik/vasttrafik/DepartureBoard_.class
+net/cloudcentrik/vasttrafik/DisplayBoardFrame$2.class
 net/cloudcentrik/vasttrafik/VasttrafikRetrofitClient.class

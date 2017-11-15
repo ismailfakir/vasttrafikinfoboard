@@ -2,8 +2,10 @@ package net.cloudcentrik.vasttrafik;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
+import javax.swing.border.TitledBorder;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.JTableHeader;
+import javax.swing.table.TableCellRenderer;
 import javax.swing.table.TableModel;
 import java.awt.*;
 import java.awt.event.MouseAdapter;
@@ -20,50 +22,47 @@ public class DisplayBoardFrame extends JPanel{
     private static List<Departure> departures;
 
     public DisplayBoardFrame(List<Departure> departures){
-        super(new GridLayout(1,0));
+        super(new BorderLayout(10,10));
+        this.setLayout(new BorderLayout(10,20));
 
         this.departures=departures;
 
-        String[] columnNames = {"Line",
-                "Arival Time",
-                "Destination"};
-
-        Object[][] data = {
-                {departures.get(0).getName(),departures.get(0).getTime(),departures.get(0).getDirection()},
-                {"Kathy", "Smith",
-                        "Snowboarding"},
-                {"John", "Doe",
-                        "Rowing"},
-                {"Sue", "Black",
-                        "Knitting"},
-                {"Jane", "White",
-                        "Speed reading"},
-                {"Joe", "Brown",
-                        "Pool"}
-        };
+        VasttrafikUtils.isAfter(departures.get(0).getTime());
 
         List<String> columns = new ArrayList<String>();
         List<String[]> values = new ArrayList<String[]>();
 
         columns.add("Line");
+        columns.add("Track");
         columns.add("Arival Time");
         columns.add("Destination");
 
         for (int i = 0; i <this.departures.size(); i++) {
-            //String now = new SimpleDateFormat("HH-mm").format(new Date());
-            /*Date now=new Date();
-
-            String strTime = departures.get(i).getTime();
-            DateFormat format = new SimpleDateFormat("HH:mm");
-            Date date = format.parse(strTime);*/
-
-            values.add(new String[] {departures.get(i).getName(),departures.get(i).getTime(),departures.get(i).getDirection()});
+            values.add(new String[] {departures.get(i).getName(),
+                    departures.get(i).getTrack(),departures.get(i).getTime(),
+                    departures.get(i).getDirection()});
         }
 
 
         //final JTable table = new JTable(data, columnNames);
         TableModel tableModel = new DefaultTableModel(values.toArray(new Object[][] {}), columns.toArray());
-        JTable table = new JTable(tableModel);
+        JTable table = new JTable(tableModel){
+
+            public Component prepareRenderer(TableCellRenderer renderer, int row, int column)
+            {
+                Component c = super.prepareRenderer(renderer, row, column);
+
+                //  Alternate row color
+                if (!isRowSelected(row)){
+                    c.setBackground(row % 2 == 0 ? getBackground() : Color.BLACK);
+                    c.setForeground(row % 2 == 0 ? getForeground() : Color.WHITE);
+                    //VasttrafikUtils.getCurrentTime();
+                }
+
+                return c;
+            }
+
+        };
 
         JTableHeader header = table.getTableHeader();
         header.setPreferredSize(new Dimension(100,50));
@@ -74,11 +73,11 @@ public class DisplayBoardFrame extends JPanel{
         table.setForeground(Color.white);
         table.setGridColor(Color.yellow);
         //table.setShowGrid(false);
-        table.setRowMargin(5);
+        table.setRowMargin(0);
 
         table.setRowHeight(table.getRowHeight() + 30);
         table.setFont(new Font("Serif", Font.PLAIN, 20));
-        table.setIntercellSpacing(new Dimension(40,10));
+        table.setIntercellSpacing(new Dimension(1,1));
 
         table.setPreferredScrollableViewportSize(new Dimension(1000, 400));
         table.setFillsViewportHeight(true);
@@ -94,8 +93,14 @@ public class DisplayBoardFrame extends JPanel{
         //Create the scroll pane and add the table to it.
         JScrollPane scrollPane = new JScrollPane(table);
 
+        JPanel panelBorder = new JPanel();
+        //set title border
+        setTitle(panelBorder);
+
+        panelBorder.add(scrollPane);
+
         //Add the scroll pane to this panel.
-        add(scrollPane);
+        add(panelBorder,BorderLayout.PAGE_END);
         this.setBorder(new EmptyBorder(20, 20, 20, 20));
     }
 
@@ -130,5 +135,22 @@ public class DisplayBoardFrame extends JPanel{
         frame.pack();
         frame.setResizable(false);
         frame.setVisible(true);
+    }
+
+    private void setTitle(JPanel panelBorder){
+
+        //JPanel panelBorder = new JPanel();
+        /*panelBorder.setBorder(BorderFactory.createTitledBorder(
+                BorderFactory.createEtchedBorder(), "Vårvädersgatan",
+                TitledBorder.CENTER, TitledBorder.TOP));
+        panelBorder.setFont(new Font("Serif", Font.BOLD, 30));*/
+
+        TitledBorder titled = new TitledBorder("Vårvädersgatan");
+        titled.setTitleFont(new Font("Serif", Font.BOLD, 40));
+        titled.setTitleColor(Color.DARK_GRAY);
+        titled.setTitleJustification(TitledBorder.CENTER);
+        panelBorder.setBorder(titled);
+
+
     }
 }

@@ -255,4 +255,27 @@ public class Departure {
         this.rtDate = rtDate;
     }
 
+    @Override
+    public String toString() {
+        return "Departure{" +
+                "name='" + name + '\'' +
+                ", sname='" + sname + '\'' +
+                ", type='" + type + '\'' +
+                ", stopid='" + stopid + '\'' +
+                ", stop='" + stop + '\'' +
+                ", time='" + time + '\'' +
+                ", date='" + date + '\'' +
+                ", journeyid='" + journeyid + '\'' +
+                ", direction='" + direction + '\'' +
+                ", track='" + track + '\'' +
+                ", fgColor='" + fgColor + '\'' +
+                ", bgColor='" + bgColor + '\'' +
+                ", stroke='" + stroke + '\'' +
+                ", journeyDetailRef=" + journeyDetailRef +
+                ", accessibility='" + accessibility + '\'' +
+                ", booking='" + booking + '\'' +
+                ", rtTime='" + rtTime + '\'' +
+                ", rtDate='" + rtDate + '\'' +
+                '}';
+    }
 }

@@ -20,6 +20,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.time.LocalTime;
 import java.util.*;
 
 import static net.cloudcentrik.vasttrafik.DisplayBoardFrame.createAndShowGUI;
@@ -47,8 +48,12 @@ public class App
         field.put("id","vårväderstorget");
 
 
+
         String today = new SimpleDateFormat("yy-MM-dd").format(new Date().getTime()+60*60000);
-        String now = new SimpleDateFormat("HH-mm").format(new Date());
+        String now = new SimpleDateFormat("HH:mm").format(new Date());
+
+        System.out.println("Request date "+today);
+        System.out.println("Request time "+now);
 
 
         field.put("date",today);
@@ -64,12 +69,15 @@ public class App
             public void onResponse(Call<DepartureBoard> call, Response<DepartureBoard> response) {
                 try {
 
-                    System.out.println(response.body().getDepartureBoard().getServerdate());
+                    //System.out.println(response.body().getDepartureBoard().getServerdate());
 
                     List<Departure> departures=response.body().getDepartureBoard().getDeparture();
+                    printResponse(response);
 
                     for (Departure departure : departures){
-                        System.out.println(departure.getName()+" "+departure.getTime()+" "+departure.getDirection());
+                        //System.out.println(departure.toString());
+
+                        //System.out.println(departure.getName()+" "+departure.getTime()+" "+departure.getDirection());
                     }
 
                     //Schedule a job for the event-dispatching thread:
@@ -92,6 +100,30 @@ public class App
                 System.out.println(t.getMessage());
             }
         });
+
+    }
+
+    private void printDeparture(Departure departure){
+
+        System.out.println(departure.toString());
+
+    }
+
+    private static void printResponse(Response<DepartureBoard> response){
+        List<Departure> db=response.body().getDepartureBoard().getDeparture();
+
+        for(Departure d:db){
+            /*System.out.println(d.getTime());
+            System.out.println(d.getRtTime());
+            System.out.println(d.getBooking());
+            System.out.println(d.getAccessibility());
+            System.out.println(d.getRtDate());
+            System.out.println(d.getType());*/
+            System.out.println(d.toString());
+
+        }
+
+
 
     }
 }
