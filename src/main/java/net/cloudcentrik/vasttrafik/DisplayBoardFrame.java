@@ -1,5 +1,7 @@
 package net.cloudcentrik.vasttrafik;
 
+import net.cloudcentrik.vasttrafik.example.TableTimeChange;
+
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import javax.swing.border.TitledBorder;
@@ -8,6 +10,8 @@ import javax.swing.table.JTableHeader;
 import javax.swing.table.TableCellRenderer;
 import javax.swing.table.TableModel;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.text.DateFormat;
@@ -15,6 +19,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import javax.swing.Timer;
 
 public class DisplayBoardFrame extends JPanel{
 
@@ -25,9 +30,12 @@ public class DisplayBoardFrame extends JPanel{
         super(new BorderLayout(10,10));
         this.setLayout(new BorderLayout(10,20));
 
-        this.departures=departures;
+        System.out.println(departures.size());
 
-        VasttrafikUtils.isAfter(departures.get(0).getTime());
+        this.departures=new ArrayList<Departure>();
+        this.departures.addAll(departures);
+
+        VasttrafikUtils.isAfter(departures.get(0).getTime(),departures.get(0).getDate());
 
         List<String> columns = new ArrayList<String>();
         List<String[]> values = new ArrayList<String[]>();
@@ -120,7 +128,7 @@ public class DisplayBoardFrame extends JPanel{
         System.out.println("--------------------------");
     }
 
-    public static void createAndShowGUI(List<Departure> departures){
+    public void createAndShowGUI(List<Departure> departures){
         //Create and set up the window.
         JFrame frame = new JFrame("Vasttrafik Display Board :: Vårvädersgatan");
         frame.setBounds(150,150,900,500);
@@ -131,12 +139,29 @@ public class DisplayBoardFrame extends JPanel{
         newContentPane.setOpaque(true); //content panes must be opaque
         frame.setContentPane(newContentPane);
 
+        //Timer
+        Timer timer = new Timer(1000, new DisplayBoardFrame.TimerListener());
+        timer.start();
+
+
         //Display the window.
         frame.pack();
         frame.setResizable(false);
         frame.setVisible(true);
     }
 
+    private class TimerListener implements ActionListener {
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+            //
+            System.out.println("I am alive :"+new Date().toString());
+        }
+    }
+
+    /*
+    Make Title of the table
+     */
     private void setTitle(JPanel panelBorder){
 
         //JPanel panelBorder = new JPanel();

@@ -18,6 +18,5 @@ public class DisplayBoard {
 
         panel1.setVisible(true);
 
-
     }
 }

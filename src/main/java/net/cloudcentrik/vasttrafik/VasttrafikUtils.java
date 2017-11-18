@@ -41,7 +41,7 @@ public class VasttrafikUtils {
         return cal.getTime();
     }
 
-    public static boolean isAfter(String time){
+    public static boolean isAfter(String time,String date){
 
         SimpleDateFormat dateFormat = new SimpleDateFormat("yy-MM-dd HH:mm");
 
@@ -50,10 +50,10 @@ public class VasttrafikUtils {
             Calendar cal = Calendar.getInstance();
 
             Date currentTime=Calendar.getInstance().getTime();
-            Date inputTime=dateFormat.parse(time);
+            Date inputTime=dateFormat.parse(date.concat(" ").concat(time));
 
-            System.out.println("Input Time : "+inputTime);
-            System.out.println("Current Time : "+currentTime);
+            //System.out.println("Input Time : "+inputTime);
+            //System.out.println("Current Time : "+currentTime);
 
             if(inputTime.after(currentTime)){
                 return true;
@@ -65,4 +65,10 @@ public class VasttrafikUtils {
         }
         return false;
     }
+
+    /*public static void main( String[] args ) throws Exception
+    {
+        VasttrafikUtils vt=new VasttrafikUtils();
+        System.out.println(isAfter("20:40","17-11-12"));
+    }*/
 }
