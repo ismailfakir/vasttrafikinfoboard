@@ -20,21 +20,22 @@ package net.cloudcentrik.vasttrafik;
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import javax.swing.border.TitledBorder;
-import javax.swing.table.DefaultTableModel;
-import javax.swing.table.JTableHeader;
-import javax.swing.table.TableCellRenderer;
-import javax.swing.table.TableModel;
+import javax.swing.table.*;
 import java.awt.*;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class DisplayTable extends JPanel {
 
     private JTable table;
+    private String stopName;
 
-    public DisplayTable(List<Departure> departures){
+    public DisplayTable(List<Departure> departures,String stopName){
         super(new BorderLayout(10,10));
         this.setLayout(new BorderLayout(10,20));
+        this.stopName=stopName;
 
         TableModel tableModel = new DefaultTableModel(getRows(departures), getColumns());
         table = new JTable(tableModel){
@@ -42,6 +43,9 @@ public class DisplayTable extends JPanel {
             public Component prepareRenderer(TableCellRenderer renderer, int row, int column)
             {
                 Component c = super.prepareRenderer(renderer, row, column);
+
+
+                //Color bgc=departures.get(row).getBgColor();
 
                 //  Alternate row color
                 if (!isRowSelected(row)){
@@ -55,6 +59,9 @@ public class DisplayTable extends JPanel {
 
         };
 
+
+
+
         JTableHeader header = table.getTableHeader();
         header.setPreferredSize(new Dimension(100,50));
         header.setFont(new Font("Serif", Font.BOLD, 20));
@@ -65,11 +72,18 @@ public class DisplayTable extends JPanel {
         table.setGridColor(Color.yellow);
         table.setRowMargin(0);
 
+        //table.setShowGrid(false);
+
         table.setRowHeight(table.getRowHeight() + 30);
         table.setFont(new Font("Serif", Font.PLAIN, 20));
         table.setIntercellSpacing(new Dimension(1,1));
+        table.setAutoResizeMode(JTable.AUTO_RESIZE_LAST_COLUMN);
 
-        table.setPreferredScrollableViewportSize(new Dimension(1000, 400));
+        DefaultTableCellRenderer centerRenderer = new DefaultTableCellRenderer();
+        centerRenderer.setHorizontalAlignment( JLabel.CENTER );
+        table.setDefaultRenderer(String.class, centerRenderer);
+
+        table.setPreferredScrollableViewportSize(new Dimension(1100, 500));
         table.setFillsViewportHeight(true);
 
         //Create the scroll pane and add the table to it.
@@ -91,7 +105,7 @@ public class DisplayTable extends JPanel {
      */
     private void setTitle(JPanel panelBorder){
 
-        TitledBorder titled = new TitledBorder("Vårvädersgatan");
+        TitledBorder titled = new TitledBorder(stopName);
         titled.setTitleFont(new Font("Serif", Font.BOLD, 40));
         titled.setTitleColor(Color.DARK_GRAY);
         titled.setTitleJustification(TitledBorder.CENTER);
@@ -103,7 +117,7 @@ public class DisplayTable extends JPanel {
         System.out.println("Updating table");
         try {
 
-            VasttrafikApiUtils.getDepartures("Vårväderstorget", new VasttrafikApiUtils.CallbackInterface() {
+            VasttrafikApiUtils.getDepartures(this.stopName, new VasttrafikApiUtils.CallbackInterface() {
                 @Override
                 public void onSuccess(java.util.List<Departure> departureList) {
 
@@ -129,8 +143,16 @@ public class DisplayTable extends JPanel {
 
     }
 
-    private Object[][] getRows(List<Departure> departures){
+    private Object[][] getRows(List<Departure> departureList){
+        if(departureList.size()<1){
+            List<String[]> tempList = new ArrayList<String[]>();
+            tempList.add(new String[] {"","","",""});
+            tempList.add(new String[] {"Connecting to vasttrafik","loding derparture list","","Please wait...."});
+            return tempList.toArray(new Object[][] {});
+        }
+        List<Departure> departures=sortByDestination(departureList);
         List<String[]> values = new ArrayList<String[]>();
+        values.clear();
         for (int i = 0; i <departures.size(); i++) {
             boolean isAfter=VasttrafikUtils.isAfter(departures.get(i).getTime(),departures.get(i).getDate());
             if(isAfter){
@@ -146,12 +168,30 @@ public class DisplayTable extends JPanel {
 
     private Object[] getColumns(){
         List<String> columns = new ArrayList<String>();
+        columns.clear();
         columns.add("Line");
         columns.add("Track");
         columns.add("Arival Time");
         columns.add("Destination");
 
         return columns.toArray();
+    }
+
+    private List<Departure> sortByDestination(List<Departure> departures){
+
+        List<Departure> list=departures;
+
+        Collections.sort(list, new Comparator<Departure>() {
+            @Override
+            public int compare(Departure d2, Departure d1)
+            {
+
+                return  d1.getDirection().compareTo(d2.getDirection());
+            }
+        });
+        Collections.reverse(list);
+        return list;
+
     }
 
 }

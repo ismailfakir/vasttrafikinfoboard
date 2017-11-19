@@ -1,4 +1,5 @@
 net/cloudcentrik/vasttrafik/VasttrafikUtils.class
+net/cloudcentrik/vasttrafik/App$stopListener.class
 net/cloudcentrik/vasttrafik/CallbackInterfaceTemp.class
 net/cloudcentrik/vasttrafik/App$1.class
 net/cloudcentrik/vasttrafik/VasttrafikApiUtils$CallbackInterface.class
@@ -6,6 +7,8 @@ net/cloudcentrik/vasttrafik/DisplayBoardFrame.class
 net/cloudcentrik/vasttrafik/DisplayTable$1.class
 net/cloudcentrik/vasttrafik/App$3.class
 net/cloudcentrik/vasttrafik/VasttrafikApiUtils$1.class
+net/cloudcentrik/vasttrafik/App$aboutListener$1.class
+net/cloudcentrik/vasttrafik/App$aboutListener.class
 net/cloudcentrik/vasttrafik/Departure.class
 net/cloudcentrik/vasttrafik/DisplayBoardFrame$2.class
 net/cloudcentrik/vasttrafik/VasttrafikRetrofitClient.class
@@ -18,9 +21,11 @@ net/cloudcentrik/vasttrafik/DisplayTable$2.class
 net/cloudcentrik/vasttrafik/DisplayBoard.class
 net/cloudcentrik/vasttrafik/example/TableTimeChange.class
 net/cloudcentrik/vasttrafik/VasttrafikApiUtils.class
+net/cloudcentrik/vasttrafik/App$stopListener$1.class
 net/cloudcentrik/vasttrafik/App$2.class
 net/cloudcentrik/vasttrafik/JourneyDetailRef.class
 net/cloudcentrik/vasttrafik/example/TableTimeChange$1.class
 net/cloudcentrik/vasttrafik/DepartureBoard.class
 net/cloudcentrik/vasttrafik/DepartureBoard_.class
 net/cloudcentrik/vasttrafik/DisplayTable.class
+net/cloudcentrik/vasttrafik/DisplayTable$3.class

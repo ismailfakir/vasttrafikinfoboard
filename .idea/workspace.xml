@@ -5,30 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dd30f0c6-547f-4151-90f4-c551cb36a8d6" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/Cloudcentrik.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/GPL.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/cloudcentrik/vasttrafik/CallbackInterfaceTemp.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/cloudcentrik/vasttrafik/DisplayTable.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/net/cloudcentrik/vasttrafik/example/TableTimeChange.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/net/cloudcentrik/vasttrafik/App$1$1.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/net/cloudcentrik/vasttrafik/App$1.class" afterPath="$PROJECT_DIR$/target/classes/net/cloudcentrik/vasttrafik/App$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/net/cloudcentrik/vasttrafik/App.class" afterPath="$PROJECT_DIR$/target/classes/net/cloudcentrik/vasttrafik/App.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/net/cloudcentrik/vasttrafik/DisplayBoard.class" afterPath="$PROJECT_DIR$/target/classes/net/cloudcentrik/vasttrafik/DisplayBoard.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/net/cloudcentrik/vasttrafik/DisplayBoardFrame$1.class" afterPath="$PROJECT_DIR$/target/classes/net/cloudcentrik/vasttrafik/DisplayBoardFrame$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/net/cloudcentrik/vasttrafik/DisplayBoardFrame.class" afterPath="$PROJECT_DIR$/target/classes/net/cloudcentrik/vasttrafik/DisplayBoardFrame.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/net/cloudcentrik/vasttrafik/VasttrafikApiUtils.class" afterPath="$PROJECT_DIR$/target/classes/net/cloudcentrik/vasttrafik/VasttrafikApiUtils.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/net.cloudcentrik.vasttrafik-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/net.cloudcentrik.vasttrafik-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/cloudcentrik/vasttrafik/App.java" afterPath="$PROJECT_DIR$/src/main/java/net/cloudcentrik/vasttrafik/App.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/cloudcentrik/vasttrafik/DisplayBoard.java" afterPath="$PROJECT_DIR$/src/main/java/net/cloudcentrik/vasttrafik/DisplayBoard.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/cloudcentrik/vasttrafik/DisplayBoardFrame.java" afterPath="$PROJECT_DIR$/src/main/java/net/cloudcentrik/vasttrafik/DisplayBoardFrame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/cloudcentrik/vasttrafik/DisplayTable.java" afterPath="$PROJECT_DIR$/src/main/java/net/cloudcentrik/vasttrafik/DisplayTable.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/cloudcentrik/vasttrafik/VasttrafikApiUtils.java" afterPath="$PROJECT_DIR$/src/main/java/net/cloudcentrik/vasttrafik/VasttrafikApiUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/net/cloudcentrik/vasttrafik/VasttrafikUtils.java" afterPath="$PROJECT_DIR$/src/main/java/net/cloudcentrik/vasttrafik/VasttrafikUtils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-net.cloudcentrik.vasttrafik.AppTest.xml" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-net.cloudcentrik.vasttrafik.AppTest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/surefire-reports/net.cloudcentrik.vasttrafik.AppTest.txt" afterPath="$PROJECT_DIR$/target/surefire-reports/net.cloudcentrik.vasttrafik.AppTest.txt" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -44,16 +31,22 @@
       <file leaf-file-name="App.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudcentrik/vasttrafik/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1620">
-              <caret line="90" column="22" lean-forward="false" selection-start-line="90" selection-start-column="22" selection-end-line="90" selection-end-column="22" />
+            <state relative-caret-position="311">
+              <caret line="185" column="46" lean-forward="false" selection-start-line="185" selection-start-column="46" selection-end-line="185" selection-end-column="46" />
               <folding>
-                <element signature="e#0#3126#0" expanded="true" />
+                <element signature="e#0#6693#0" expanded="true" />
                 <element signature="imports" expanded="true" />
-                <element signature="e#1353#1354#0" expanded="true" />
-                <element signature="e#1394#1395#0" expanded="true" />
-                <element signature="e#2912#2913#0" expanded="true" />
-                <element signature="e#2970#2971#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DisplayBoardFrame.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudcentrik/vasttrafik/DisplayBoardFrame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="648">
+              <caret line="55" column="87" lean-forward="false" selection-start-line="55" selection-start-column="54" selection-end-line="55" selection-end-column="87" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -61,12 +54,13 @@
       <file leaf-file-name="DisplayTable.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudcentrik/vasttrafik/DisplayTable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+            <state relative-caret-position="-1647">
+              <caret line="82" column="50" lean-forward="false" selection-start-line="82" selection-start-column="50" selection-end-line="82" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#4257#4267#0" expanded="true" />
-                <element signature="e#4833#4841#0" expanded="true" />
+                <element signature="e#4670#4680#0" expanded="true" />
+                <element signature="e#5033#5043#0" expanded="true" />
+                <element signature="e#5633#5641#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -75,11 +69,21 @@
       <file leaf-file-name="VasttrafikUtils.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudcentrik/vasttrafik/VasttrafikUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="55" column="14" lean-forward="false" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
+            <state relative-caret-position="810">
+              <caret line="51" column="61" lean-forward="false" selection-start-line="51" selection-start-column="61" selection-end-line="51" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="VasttrafikApiUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudcentrik/vasttrafik/VasttrafikApiUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="630">
+              <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -132,16 +136,16 @@
         <option value="$PROJECT_DIR$/src/main/java/net/cloudcentrik/vasttrafik/DisplayBoard.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/cloudcentrik/vasttrafik/CallbackInterface.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/cloudcentrik/vasttrafik/DisplayBoardFrame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/cloudcentrik/vasttrafik/VasttrafikUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/cloudcentrik/vasttrafik/VasttrafikApiUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/cloudcentrik/vasttrafik/DisplayTable.java" />
-        <option value="$PROJECT_DIR$/src/main/java/net/cloudcentrik/vasttrafik/VasttrafikUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/cloudcentrik/vasttrafik/App.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="352" />
-    <option name="y" value="39" />
+    <option name="x" value="341" />
+    <option name="y" value="91" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
@@ -160,8 +164,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -229,8 +234,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -441,15 +445,21 @@
       <option name="project" value="LOCAL" />
       <updated>1510782750239</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Timer added">
+      <created>1511037531829</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1511037531829</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="352" y="39" width="1400" height="1000" extended-state="0" />
+    <frame x="341" y="91" width="1400" height="1000" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -461,7 +471,6 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -472,7 +481,9 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32885906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32924107" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -481,7 +492,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="UI Updated" />
     <MESSAGE value="Date time updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Date time updated" />
+    <MESSAGE value="Timer added" />
+    <option name="LAST_COMMIT_MESSAGE" value="Timer added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -492,15 +504,61 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudcentrik/vasttrafik/App.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="37" column="47" lean-forward="false" selection-start-line="37" selection-start-column="47" selection-end-line="37" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#6693#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudcentrik/vasttrafik/DisplayBoardFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="55" column="87" lean-forward="false" selection-start-line="55" selection-start-column="54" selection-end-line="55" selection-end-column="87" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudcentrik/vasttrafik/VasttrafikUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="51" column="61" lean-forward="false" selection-start-line="51" selection-start-column="61" selection-end-line="51" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudcentrik/vasttrafik/VasttrafikApiUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudcentrik/vasttrafik/DisplayTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="76" column="10" lean-forward="false" selection-start-line="76" selection-start-column="10" selection-end-line="76" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#4670#4680#0" expanded="true" />
+            <element signature="e#5033#5043#0" expanded="true" />
+            <element signature="e#5633#5641#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudcentrik/vasttrafik/App.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1692">
           <caret line="121" column="45" lean-forward="false" selection-start-line="121" selection-start-column="45" selection-end-line="121" selection-end-column="45" />
           <folding>
-            <element signature="e#0#3126#0" expanded="true" />
+            <element signature="e#0#6693#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#1353#1354#0" expanded="true" />
-            <element signature="e#1394#1395#0" expanded="true" />
-            <element signature="e#2912#2913#0" expanded="true" />
-            <element signature="e#2970#2971#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -519,13 +577,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
           <caret line="23" column="24" lean-forward="false" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1250#1258#0" expanded="false" />
-            <element signature="e#1307#1317#0" expanded="false" />
-            <element signature="e#3269#3421#0" expanded="false" />
-            <element signature="e#3420#3421#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -534,12 +586,8 @@
         <state relative-caret-position="270">
           <caret line="37" column="18" lean-forward="false" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
           <folding>
-            <element signature="e#0#3126#0" expanded="true" />
+            <element signature="e#0#6693#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#1353#1354#0" expanded="true" />
-            <element signature="e#1394#1395#0" expanded="true" />
-            <element signature="e#2912#2913#0" expanded="true" />
-            <element signature="e#2970#2971#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -548,13 +596,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
           <caret line="40" column="55" lean-forward="false" selection-start-line="40" selection-start-column="55" selection-end-line="40" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1250#1258#0" expanded="false" />
-            <element signature="e#1307#1317#0" expanded="false" />
-            <element signature="e#3269#3421#0" expanded="false" />
-            <element signature="e#3420#3421#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -563,12 +605,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#3126#0" expanded="true" />
+            <element signature="e#0#6693#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#1353#1354#0" expanded="true" />
-            <element signature="e#1394#1395#0" expanded="true" />
-            <element signature="e#2912#2913#0" expanded="true" />
-            <element signature="e#2970#2971#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -577,13 +615,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1854">
           <caret line="117" column="67" lean-forward="false" selection-start-line="117" selection-start-column="67" selection-end-line="117" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1250#1258#0" expanded="false" />
-            <element signature="e#1307#1317#0" expanded="false" />
-            <element signature="e#3269#3421#0" expanded="false" />
-            <element signature="e#3420#3421#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -592,12 +624,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#3126#0" expanded="true" />
+            <element signature="e#0#6693#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#1353#1354#0" expanded="true" />
-            <element signature="e#1394#1395#0" expanded="true" />
-            <element signature="e#2912#2913#0" expanded="true" />
-            <element signature="e#2970#2971#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -606,13 +634,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1080">
           <caret line="69" column="44" lean-forward="true" selection-start-line="69" selection-start-column="44" selection-end-line="69" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1250#1258#0" expanded="false" />
-            <element signature="e#1307#1317#0" expanded="false" />
-            <element signature="e#3269#3421#0" expanded="false" />
-            <element signature="e#3420#3421#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -621,12 +643,8 @@
         <state relative-caret-position="612">
           <caret line="51" column="63" lean-forward="false" selection-start-line="51" selection-start-column="63" selection-end-line="51" selection-end-column="63" />
           <folding>
-            <element signature="e#0#3126#0" expanded="true" />
+            <element signature="e#0#6693#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#1353#1354#0" expanded="true" />
-            <element signature="e#1394#1395#0" expanded="true" />
-            <element signature="e#2912#2913#0" expanded="true" />
-            <element signature="e#2970#2971#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -651,12 +669,8 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#3126#0" expanded="true" />
+            <element signature="e#0#6693#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#1353#1354#0" expanded="true" />
-            <element signature="e#1394#1395#0" expanded="true" />
-            <element signature="e#2912#2913#0" expanded="true" />
-            <element signature="e#2970#2971#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -764,14 +778,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudcentrik/vasttrafik/VasttrifikTokenService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudcentrik/vasttrafik/DisplayBoard.form">
       <provider selected="true" editor-type-id="ui-designer">
         <state />
@@ -793,18 +799,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudcentrik/vasttrafik/DisplayBoardFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="32" column="27" lean-forward="true" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1250#1258#0" expanded="false" />
-            <element signature="e#1307#1317#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudcentrik/vasttrafik/example/TableTimeChange.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -813,47 +807,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudcentrik/vasttrafik/VasttrifikTokenService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudcentrik/vasttrafik/VasttrafikUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="810">
+          <caret line="51" column="61" lean-forward="false" selection-start-line="51" selection-start-column="61" selection-end-line="51" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudcentrik/vasttrafik/VasttrafikApiUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="102" column="4" lean-forward="false" selection-start-line="102" selection-start-column="4" selection-end-line="102" selection-end-column="4" />
+        <state relative-caret-position="630">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudcentrik/vasttrafik/DisplayBoardFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="648">
+          <caret line="55" column="87" lean-forward="false" selection-start-line="55" selection-start-column="54" selection-end-line="55" selection-end-column="87" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudcentrik/vasttrafik/DisplayTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="122" column="0" lean-forward="false" selection-start-line="122" selection-start-column="0" selection-end-line="122" selection-end-column="0" />
+        <state relative-caret-position="-1647">
+          <caret line="82" column="50" lean-forward="false" selection-start-line="82" selection-start-column="50" selection-end-line="82" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#4257#4267#0" expanded="true" />
-            <element signature="e#4833#4841#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudcentrik/vasttrafik/VasttrafikUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="55" column="14" lean-forward="false" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#4670#4680#0" expanded="true" />
+            <element signature="e#5033#5043#0" expanded="true" />
+            <element signature="e#5633#5641#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/cloudcentrik/vasttrafik/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1620">
-          <caret line="90" column="22" lean-forward="false" selection-start-line="90" selection-start-column="22" selection-end-line="90" selection-end-column="22" />
+        <state relative-caret-position="311">
+          <caret line="185" column="46" lean-forward="false" selection-start-line="185" selection-start-column="46" selection-end-line="185" selection-end-column="46" />
           <folding>
-            <element signature="e#0#3126#0" expanded="true" />
+            <element signature="e#0#6693#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#1353#1354#0" expanded="true" />
-            <element signature="e#1394#1395#0" expanded="true" />
-            <element signature="e#2912#2913#0" expanded="true" />
-            <element signature="e#2970#2971#0" expanded="true" />
           </folding>
         </state>
       </provider>
